@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+/* Reset Code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -7,11 +20,33 @@ body {
   font-weight: 400;
   color: #666;
 }
-
+/*Common Button */
+.banner-btn .btn-boxed {
+  background-color: #85af4b;
+  padding: 10px 40px;
+  color: #fff;
+  border-radius: 50px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.banner-btn .btn-boxed:hover {
+  background-color: #333;
+}
+.banner-btn .btn-border {
+  border: 2px solid #fff;
+  padding: 8px 40px;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-block;
+}
+.banner-btn .btn-border:hover {
+  background-color: #85af4b;
+  border-color: #85af4b;
+}
 /* Header Top */
 section.header-top-area {
   background-color: #095dc7;
-  padding: 20px;
+  padding: 10px;
 }
 
 .social-icon a {
@@ -40,10 +75,6 @@ section.header-top-area {
 
 /* Header */
 
-header.header-area {
-  padding: 20px 0;
-}
-
 ul.main-menu li {
   margin-right: 20px;
 }
@@ -57,4 +88,23 @@ ul.main-menu li a {
 }
 ul.main-menu li a:hover {
   color: #095dc7;
+}
+
+/* Banner */
+section.banner-area {
+  background-position: center;
+  background-size: cover;
+  padding: 280px 0 260px;
+}
+
+section.banner-area h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+section.banner-area p {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 40px 0 30px;
 }

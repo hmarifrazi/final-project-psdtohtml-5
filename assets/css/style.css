@@ -18,8 +18,11 @@ section.header-top-area {
   color: #fff;
   display: inline-block;
   margin-right: 12px;
+  transition: all 0.3s;
 }
-
+.social-icon a:hover {
+  color: #012c44;
+}
 .social-icon i {
   font-size: 14px;
 }
@@ -33,4 +36,25 @@ section.header-top-area {
 
 .social-info span {
   margin-left: 10px;
+}
+
+/* Header */
+
+header.header-area {
+  padding: 20px 0;
+}
+
+ul.main-menu li {
+  margin-right: 20px;
+}
+
+ul.main-menu li a {
+  font-weight: 600;
+  color: #012c44;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s;
+}
+ul.main-menu li a:hover {
+  color: #095dc7;
 }

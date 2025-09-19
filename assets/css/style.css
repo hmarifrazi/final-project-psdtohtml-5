@@ -21,13 +21,15 @@ body {
   color: #666;
 }
 /*Common Button */
-.banner-btn .btn-boxed {
+.banner-btn .btn-boxed,
+.info-btn {
   background-color: #85af4b;
   padding: 10px 40px;
   color: #fff;
   border-radius: 50px;
   margin-right: 20px;
   display: inline-block;
+  text-transform: uppercase;
 }
 .banner-btn .btn-boxed:hover {
   background-color: #333;
@@ -107,4 +109,177 @@ section.banner-area p {
   font-size: 16px;
   line-height: 30px;
   margin: 40px 0 30px;
+}
+
+/* Features */
+section.features-area {
+  padding: 130px 0 130px;
+}
+
+section.features-area h4 {
+  font-size: 34px;
+  line-height: 48px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+}
+
+section.features-area h4::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #135ebd;
+  right: 64px;
+  top: 10px;
+}
+
+section.features-area p {
+  font-size: 13px;
+  line-height: 28px;
+}
+.single-feature {
+  margin-top: 60px;
+}
+
+.single-feature h5 {
+  color: #111111;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.single-feature p {
+  font-size: 10px;
+  line-height: 24px;
+  color: #666;
+}
+/* About */
+section.about-area {
+  background-color: #f8fafc;
+  padding: 120px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.about-info h4 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #111111;
+}
+
+.about-info p {
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 30px;
+}
+
+.about-info .info-btn {
+  background-color: #e6e6e6;
+  color: #135ebe;
+  padding: 10px 30px;
+  font-weight: 500;
+}
+/* Counter */
+section.counter-area {
+  background-color: #f8fafc;
+  padding: 80px 0;
+}
+
+.single-counter h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #111;
+}
+
+.single-counter p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* FAQ */
+section.faq-area {
+  padding: 120px 0;
+}
+
+section.faq-area h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+section.faq-area p {
+  font-size: 12px;
+  margin-right: 41px;
+}
+.author-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #111;
+}
+
+.author-info h4 span {
+  font-size: 12px;
+  line-height: 28px;
+  display: block;
+  color: #666;
+}
+
+.faq-sample h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  transition: all 0.3s;
+}
+
+.faq-label {
+  position: relative;
+  padding: 20px 0;
+  padding-left: 50px;
+}
+.faq-label::before {
+  content: "+";
+  position: absolute;
+  color: #111;
+  left: 0;
+  top: 15px;
+  background-color: #f1f1f1;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+.faq-info {
+  position: relative;
+  height: 0;
+  text-align: justify;
+  overflow: hidden;
+  transition: all 0.3s;
+  padding-left: 50px;
+}
+
+.faq-example.active .faq-info {
+  height: 150px;
+}
+.faq-example.active .faq-label::before {
+  content: "-";
+  background-color: #095dc7;
+  color: #fff;
+}
+.faq-example.active .faq-label {
+  color: #095dc7;
+}
+
+.faq-example i {
+  background-color: #f1f1f1;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 12px;
 }

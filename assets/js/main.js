@@ -9,4 +9,29 @@ $(document).ready(function () {
       this.classList.toggle("active");
     });
   }
+
+  // Magnific Popup JS
+
+  $(".project-img").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
+
+  // Slick Slider
+  $(".testimonials").slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    loop: true,
+  });
+  $(".clients").slick({
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    loop: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+  });
 });
